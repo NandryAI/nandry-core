@@ -1,0 +1,12 @@
+[package]
+name = "nandry-circuits"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+nandry-compiler = { path = "../nandry-compiler" }
+nandry-vm = { path = "../nandry-vm" }
+
+[lints]
+workspace = true

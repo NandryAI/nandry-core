@@ -1,0 +1,26 @@
+{
+  "format": "nandry-tsol",
+  "version": 1,
+  "vectors": [
+    {
+      "name": "two_input_nand",
+      "bytecode_hex": "54534f4c01000000020000000100000001000000000000000700000004000000020000030000",
+      "sha256": "67c747a9f835fc71edba444c8e58a1ea0fe9ffbc21828ae4a94a0682338a9b8a",
+      "steps": [
+        { "input_hex": "00", "state_hex": "", "output_hex": "01", "next_state_hex": "" },
+        { "input_hex": "01", "state_hex": "", "output_hex": "01", "next_state_hex": "" },
+        { "input_hex": "02", "state_hex": "", "output_hex": "01", "next_state_hex": "" },
+        { "input_hex": "03", "state_hex": "", "output_hex": "00", "next_state_hex": "" }
+      ]
+    },
+    {
+      "name": "one_bit_latch",
+      "bytecode_hex": "54534f4c01000000010000000100000001000000010000000400000003000001020000",
+      "sha256": "f985a4db2b3ca05e260357ab359a3e13beb65895aea85079d95c3d9e1304243d",
+      "steps": [
+        { "input_hex": "01", "state_hex": "00", "output_hex": "00", "next_state_hex": "01" },
+        { "input_hex": "00", "state_hex": "01", "output_hex": "01", "next_state_hex": "00" }
+      ]
+    }
+  ]
+}

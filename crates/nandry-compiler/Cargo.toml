@@ -1,0 +1,12 @@
+[package]
+name = "nandry-compiler"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+nandry-vm = { path = "../nandry-vm" }
+
+[lints]
+workspace = true
